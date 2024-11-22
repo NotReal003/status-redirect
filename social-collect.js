@@ -7,10 +7,8 @@ function trackVisit(pageType) {
     return;
   }
 
-  const pageTypeName = 'social';
-
   // Send a GET request to the /track-visits API
-  fetch(`https://api.notreal003.xyz/collect?pageType=${pageTypeName}`)
+  fetch(`https://api.notreal003.xyz/collect/social`)
     .then((response) => response.json())
     .then((data) => {
       if (data.success) {

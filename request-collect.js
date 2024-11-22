@@ -6,11 +6,8 @@ function trackVisit(pageType) {
     console.error(`Invalid pageType: ${pageType}. Allowed types are: ${allowedPageTypes.join(', ')}`);
     return;
   }
-
-  const pageTypeName = 'request';
-
   // Send a GET request to the /track-visits API
-  fetch(`https://api.notreal003.xyz/collect?pageType=${pageTypeName}`)
+  fetch(`https://api.notreal003.xyz/collect/request`)
     .then((response) => response.json())
     .then((data) => {
       if (data.success) {
