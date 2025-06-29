@@ -7,7 +7,7 @@ function trackVisit(pageType) {
     return;
   }
   
-fetch(`https://api.notreal003.xyz/collect/pay`)
+fetch(`https://api.notreal003.org/collect/pay`)
     .then((response) => response.json())
     .then((data) => {
       if (data.success) {
