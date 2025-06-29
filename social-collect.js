@@ -8,7 +8,7 @@ function trackVisit(pageType) {
   }
 
   // Send a GET request to the /track-visits API
-  fetch(`https://api.notreal003.xyz/collect/social`)
+  fetch(`https://api.notreal003.org/collect/social`)
     .then((response) => response.json())
     .then((data) => {
       if (data.success) {
